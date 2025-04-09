@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import axios from "axios"
 
-import { Title } from "../WindowProduct/Title/Title"
+import { Title } from "../WindowUser/Title/Title"
 
 import { IGetmanufacturerdetails } from "../../models"
 

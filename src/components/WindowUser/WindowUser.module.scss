@@ -6,6 +6,7 @@
     transition: all 0.3s;
     height: auto;
     justify-content: space-between;
+    align-items: center;
     &:hover{
         @include border(2,black);
     }

@@ -6,7 +6,7 @@ export const api = createApi({
     reducerPath:"api",
     tagTypes:["users"],
     baseQuery:fetchBaseQuery({
-        baseUrl: import.meta.env.VITE_API_URL,
+        baseUrl: "https://jsonplaceholder.typicode.com/users/",
     }),
     endpoints:builder=>({
         getAllUsers: builder.query<IUser[], null>({
