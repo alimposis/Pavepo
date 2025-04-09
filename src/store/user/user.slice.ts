@@ -19,5 +19,5 @@ export const allUserSlice = createSlice({
     }
 })
 
-const { addAllUsers } = allUserSlice.actions
+export const { addAllUsers } = allUserSlice.actions
 export const allUsersReducer = allUserSlice.reducer
