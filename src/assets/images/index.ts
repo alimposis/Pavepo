@@ -1,0 +1,1 @@
+export {default as AvtoParts} from "./images.jpg";

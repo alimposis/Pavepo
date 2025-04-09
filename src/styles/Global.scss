@@ -1,0 +1,19 @@
+@use '/src/styles/_mixins' as *;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  @include fontSize(24);
+  @include mediaFontSize(12);
+}
+
+h1{
+  @include fontSize(55);
+  @include mediaFontSize(20);
+}
+h2{
+  @include fontSize(48);
+  @include mediaFontSize(18);
+}

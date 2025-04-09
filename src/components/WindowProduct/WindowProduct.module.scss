@@ -1,0 +1,43 @@
+@use '/src/styles/_mixins' as *;
+
+.article{
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s;
+    height: auto;
+    justify-content: space-between;
+    &:hover{
+        @include border(2,black);
+    }
+    @include border(2,transparent);
+    @include width(500);
+    @include padding(50,50,50,50);
+    @include margin(20,20,20,20);
+    @include gap(20);
+    @include mediaWidth(130);
+    @include mediaPadding(20,20,20,20);
+    @include mediaMargin(20,20,20,20);
+    @include mediaGap(10);
+    img{
+        width: 100%;
+    }
+    a,button{
+        width: 100%;
+        background: red;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        cursor: pointer;
+        border: 0;
+        @include borderRadius (10);
+        @include height(50);
+        @include mediaBorderRadius (10);
+        @media (max-width:850px) {
+            flex-direction: column;
+            text-align: center;
+            height: auto;
+        }
+    }
+}

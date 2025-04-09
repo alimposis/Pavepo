@@ -1,0 +1,16 @@
+@use '/src/styles/_mixins' as *;
+
+.header{
+    width: 100%;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include height(100);
+    @include mediaHeight(50);
+    h1{
+        color: white;
+        @include margin(0,10,0,0);
+        @include mediaMargin (0,10,0,0);
+    }
+}
