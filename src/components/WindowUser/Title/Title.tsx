@@ -1,14 +1,13 @@
 import TitleStyle from "./Title.module.scss"
-export const Title = ({props}:{props:[string,string|number]}) =>{
-
+export const Title = ({category,text}:{category:string; text:string}) =>{
     return(
         <>
         <section className={TitleStyle.section}>
             <h3>
-                {props[0]}:
+                {category}:
             </h3>
             <p>
-                {props[1]}
+                {text}
             </p>
         </section>
         </>
