@@ -1,0 +1,1 @@
+import{j as s}from"./index-Ccejh9aa.js";const n="_section_drpfq_1",c={section:n},o=({category:e,text:t})=>s.jsx(s.Fragment,{children:s.jsxs("section",{className:c.section,children:[s.jsxs("h3",{children:[e,":"]}),s.jsx("p",{children:t})]})});export{o as T};
