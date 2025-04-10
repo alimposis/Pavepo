@@ -1,0 +1,1 @@
+import{j as r}from"./index-DiGFAOTX.js";import{H as s}from"./Header-DTTTVgSo.js";import{C as t}from"./Container-CE8EASR8.js";const m=()=>r.jsxs(r.Fragment,{children:[r.jsx(s,{}),r.jsx(t,{})]});export{m as default};
