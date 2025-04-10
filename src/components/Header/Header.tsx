@@ -7,7 +7,7 @@ export const Header = () => {
         <>
             <header className={HeaderStyle.header}>
                 <main className="container">
-                    <a className={HeaderStyle.link} href="/">
+                    <a className={HeaderStyle.link} href="/Pavepo/">
                         <h1>Test</h1>
                     </a>
                     <HeaderSearch />

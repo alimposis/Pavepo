@@ -10,15 +10,15 @@ const NoMatchPage = lazy(() => import('../pages/NoMatchPading/NoMatchPage'));
 export const AppRoutes = () => {
     const navigationRoutes = [
         {
-            path: '/',
+            path: '/Pavepo/',
             element: <Main />,
         },
         {
-            path: '/user/:pid',
+            path: '/Pavepo/user/:pid',
             element: <User />,
         },
         {
-            path: '/category/:category',
+            path: '/Pavepo/category/:category',
             element: <Category />,
         },
         {

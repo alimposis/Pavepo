@@ -24,7 +24,7 @@ export const Menu = () => {
                         {data &&
                             data.map(e => {
                                 return (
-                                    <a key={e.id} href={`/category/${e.address.city}`}>
+                                    <a key={e.id} href={`/Pavepo/category/${e.address.city}`}>
                                         <li
                                             onClick={() => {
                                                 setStateTargetMenu(e.address.city);

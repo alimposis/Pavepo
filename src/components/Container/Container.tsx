@@ -17,7 +17,7 @@ export const Container = () => {
     const dispatch = useDispatch();
     const usersState = useSelector((state: RootState) => state.allUsers);
     useEffect(() => {
-        if (location.pathname.startsWith('/category') && data) {
+        if (location.pathname.startsWith('/Pavepo/category') && data) {
             const categoryFiltered = data.filter(e => {
                 return e.address.city === category;
             });

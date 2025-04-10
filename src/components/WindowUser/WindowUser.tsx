@@ -15,7 +15,7 @@ const WindowUser = ({ user }: { user: IUser }) => {
                 <Title category={'Город'} text={user.address.city.replace('_', ' ')} />
                 <Title category={'Телефон'} text={user.phone} />
                 <Title category={'Email'} text={user.email} />
-                <NavLink to={`/user/${user.id}`}>
+                <NavLink to={`/Pavepo/user/${user.id}`}>
                     <Button text={'Подробнее'} color={'red'} />
                 </NavLink>
             </article>
