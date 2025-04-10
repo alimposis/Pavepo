@@ -12,13 +12,14 @@
     }
     @include border(2,transparent);
     @include width(500);
-    @include padding(50,50,50,50);
-    @include margin(20,20,20,20);
+    @include margin(10,10,10,10);
     @include gap(20);
-    @include mediaWidth(130);
-    @include mediaPadding(20,20,20,20);
-    @include mediaMargin(20,20,20,20);
+    @include mediaWidth(150);
+    @include mediaMargin(10,10,10,10);
     @include mediaGap(10);
+    @media (max-width: 850px) {
+        align-items: start;
+    }
     img{
         width: 100%;
     }
@@ -33,7 +34,8 @@
         cursor: pointer;
         border: 0;
         @include borderRadius (10);
-        @include height(50);
+        @include padding(10,20,10,20);
+        @include mediaPadding(5,10,5,10);
         @include mediaBorderRadius (10);
         @media (max-width:850px) {
             flex-direction: column;

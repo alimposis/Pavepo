@@ -1,0 +1,27 @@
+@use '/src/styles/_mixins' as *;
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    @include margin(50,0,50,0);
+    @include mediaMargin(10,0,10,0);
+    h2{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    @include margin(100,0,100,0);
+    @include gap(20);
+    @include mediaMargin(30,0,30,0);
+    @include mediaGap(10);
+    section{
+        margin-left: 0 !important;
+    }
+    @media (max-width: 850px) {
+        width: 100%;    
+    }
+}

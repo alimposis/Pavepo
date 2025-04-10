@@ -12,7 +12,10 @@ export const api = createApi({
         getAllUsers: builder.query<IUser[], null>({
             query:()=>"/"
         }),
+        getUser: builder.query<IUser, string>({
+            query:(e)=>`/${e}`
+        }),
     })
 })
 
-export const {useGetAllUsersQuery}= api
+export const {useGetAllUsersQuery,useGetUserQuery}= api

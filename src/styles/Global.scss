@@ -10,10 +10,15 @@
 }
 
 h1{
-  @include fontSize(55);
-  @include mediaFontSize(20);
-}
-h2{
   @include fontSize(48);
   @include mediaFontSize(18);
+}
+h2{
+  @include fontSize(44);
+  @include mediaFontSize(16);
+}
+
+.container{
+  @include padding(0,70,0,70);
+  @include mediaPadding(0,10,0,10);
 }

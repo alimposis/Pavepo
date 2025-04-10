@@ -1,7 +1,7 @@
 export interface IUser{
     id:number
     name:string
-    username:number
+    username:string
     email:string
     address:IUserAdress
     phone:string
