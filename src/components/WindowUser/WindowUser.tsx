@@ -1,21 +1,25 @@
-import { NavLink } from "react-router"
+import { NavLink } from 'react-router';
 
-import { Title } from "../Title/Title"
+import { Title } from '../Title/Title';
+import { Button } from '../Button/Button';
 
-import { IUser } from "../../models"
+import WindowUserStyle from './WindowUser.module.scss';
 
-import WindowUserStyle from "./WindowUser.module.scss"
+import { IUser } from '../../models';
 
-
-export const WindowUser = ({user}:{user:IUser}) => {
-    return(
+const WindowUser = ({ user }: { user: IUser }) => {
+    return (
         <>
-        <article className={WindowUserStyle.article}>
-            <h2>{user.username}</h2>
-            <Title category={"Email"} text={user.email}/>
-            <Title category={"Телефон"} text={user.phone}/>
-            <NavLink to={`/user/${user.id}`}><button onClick={()=>{console.log(user)}}>Подробнее</button></NavLink>
-        </article>
+            <article className={WindowUserStyle.article}>
+                <h2>{user.username.replace('_', ' ')}</h2>
+                <Title category={'Город'} text={user.address.city.replace('_', ' ')} />
+                <Title category={'Телефон'} text={user.phone} />
+                <Title category={'Email'} text={user.email} />
+                <NavLink to={`/user/${user.id}`}>
+                    <Button text={'Подробнее'} color={'red'} />
+                </NavLink>
+            </article>
         </>
-    )
-}
+    );
+};
+export default WindowUser;

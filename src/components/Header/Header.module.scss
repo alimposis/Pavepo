@@ -7,10 +7,13 @@
     align-items: center;
     @include height(100);
     @include mediaHeight(50);
-    .link{
+    h2{
         color: white;
+    }
+    .link{
         cursor: pointer;
         text-decoration: none;
+        color: white;
         border: 0;
         background: transparent;
         @include margin(0,10,0,0);
@@ -20,5 +23,9 @@
         display: flex;
         @include gap(20);
         @include mediaGap(5);
+    }
+    @media (max-width:850px) {
+        top:0;
+        position: fixed;
     }
 }

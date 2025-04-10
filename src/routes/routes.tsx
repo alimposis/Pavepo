@@ -1,29 +1,46 @@
-import { Route, Routes } from "react-router"
+import { lazy, Suspense } from 'react';
+import { Route, Routes } from 'react-router';
 
-import { Main } from "../pages/Main/Main"
-import { User } from "../pages/User/User"
-import { NoMatchPage } from "../pages/NoMatchPading/NoMatchPage"
+import { gifLoading } from '../assets/gif';
+const Main = lazy(() => import('../pages/Main/Main'));
+const User = lazy(() => import('../pages/User/User'));
+const Category = lazy(() => import('../pages/Category/Category'));
+const NoMatchPage = lazy(() => import('../pages/NoMatchPading/NoMatchPage'));
 
-export const AppRoutes = () =>{
+export const AppRoutes = () => {
     const navigationRoutes = [
         {
-            path:"/", 
-            element:<Main/>
+            path: '/',
+            element: <Main />,
         },
         {
-            path:"/user/:pid", 
-            element:<User/>
+            path: '/user/:pid',
+            element: <User />,
         },
         {
-            path:"*", 
-            element:<NoMatchPage/>
+            path: '/category/:category',
+            element: <Category />,
         },
-    ]
-    return(
+        {
+            path: '*',
+            element: <NoMatchPage />,
+        },
+    ];
+    return (
         <>
-        <Routes>
-            {navigationRoutes.map((route)=><Route key={route.path} path={route.path} element={route.element}/>)}
-        </Routes>
+            <Suspense
+                fallback={
+                    <>
+                        <img src={gifLoading} alt="" />
+                    </>
+                }
+            >
+                <Routes>
+                    {navigationRoutes.map(route => (
+                        <Route key={route.path} path={route.path} element={route.element} />
+                    ))}
+                </Routes>
+            </Suspense>
         </>
-    )
-}
+    );
+};

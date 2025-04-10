@@ -68,3 +68,9 @@
         border: solid calc(($mobile / 360) * 100vw) $color;
     }
 }
+
+@mixin mediaTop($mobile) {
+    @media (max-width:850px) {
+        top: calc(($mobile / 360) * 100vw);
+    }
+}

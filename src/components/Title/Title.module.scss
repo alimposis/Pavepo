@@ -1,19 +1,25 @@
 @use '/src/styles/_mixins' as *;
 
-.section{
+.section {
     display: flex;
     margin-left: 0;
     margin-right: auto;
     margin-left: auto;
-    @include gap (5);
-    @include mediaGap (5);
-    @media ( max-width:850px){
+    @include gap(5);
+    @include mediaGap(5);
+    @media (max-width: 850px) {
         width: 100%;
         flex-direction: column;
         margin-left: 0 !important;
     }
-    p{
+    p {
         flex-wrap: wrap;
         text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        @media (max-width: 850px) {
+            width: 90%;
+        }
     }
 }

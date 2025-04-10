@@ -1,15 +1,21 @@
-import ButtonStyle from "./Button.module.scss"
+import ButtonStyle from './Button.module.scss';
 
-export const Button = ({props}:{props:[string,Function]}) =>{
-    const text = props[0]
-    const functionProps = props[1]
-    return(
-        <>
-        <button 
-        onClick={()=>{ functionProps()}}
-        className={ButtonStyle.button}> 
-            {text && text}
-        </button>
-        </>
-    )
+interface IProps {
+    text: string;
+    functionProps?: () => null | undefined;
+    color?: string;
 }
+
+export const Button = ({ text, functionProps, color }: IProps) => {
+    return (
+        <>
+            <button
+                style={{ background: `${color}` }}
+                onClick={() => (functionProps ? functionProps() : null)}
+                className={ButtonStyle.button}
+            >
+                {text && text}
+            </button>
+        </>
+    );
+};

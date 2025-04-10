@@ -1,6 +1,7 @@
 import { Header } from '../../components/Header/Header';
 import { Container } from '../../components/Container/Container';
-const Main = () => {
+
+const Category = () => {
     return (
         <>
             <Header />
@@ -8,4 +9,5 @@ const Main = () => {
         </>
     );
 };
-export default Main;
+
+export default Category;

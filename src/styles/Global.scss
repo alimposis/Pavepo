@@ -1,21 +1,24 @@
 @use '/src/styles/_mixins' as *;
-
+@use './fonts';
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  @include fontSize(24);
-  @include mediaFontSize(12);
+  font-family: "Benzin-Regular";
+  @include fontSize(22);
+  @include mediaFontSize(10);
 }
-
+h1,h2{
+  font-family: "Benzin-Semibold";
+}
 h1{
-  @include fontSize(48);
-  @include mediaFontSize(18);
-}
-h2{
   @include fontSize(44);
   @include mediaFontSize(16);
+}
+h2{
+  @include fontSize(40);
+  @include mediaFontSize(14);
 }
 
 .container{

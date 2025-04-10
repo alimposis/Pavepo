@@ -5,6 +5,7 @@
     flex-direction: column;
     @include margin(50,0,50,0);
     @include mediaMargin(10,0,10,0);
+    @include mediaPadding (50,0,0,0);
     h2{
         margin-left: auto;
         margin-right: auto;
