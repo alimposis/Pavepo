@@ -1,0 +1,1 @@
+import{j as r}from"./index-CY_b22kh.js";import{H as t}from"./Header-DP5aOwIH.js";import{C as o}from"./Container-DQ0UNGW2.js";const m=()=>r.jsxs(r.Fragment,{children:[r.jsx(t,{}),r.jsx(o,{})]});export{m as default};
