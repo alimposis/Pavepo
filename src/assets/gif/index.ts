@@ -1,0 +1,1 @@
+export {default as gifLoading} from "./loading.gif";
