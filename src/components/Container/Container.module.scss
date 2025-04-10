@@ -1,0 +1,13 @@
+@use '/src/styles/_mixins' as *;    
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    width: 100%;
+    @include mediaPadding (50,0,0,0);
+}
+.loading{
+    margin: auto;
+    margin-top: 10%;
+    max-width: 100%;
+}

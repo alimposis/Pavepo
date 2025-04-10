@@ -1,0 +1,76 @@
+@mixin fontSize($desctop) {
+  font-size: calc(($desctop / 1920) * 100vw);
+}
+@mixin mediaFontSize($mobile) {
+    @media (max-width: 850px) {
+        font-size: calc(($mobile / 360) * 100vw);
+      }
+}
+@mixin width($desctop) {
+  width: calc(($desctop / 1920) * 100vw);
+}
+
+@mixin mediaWidth($mobile) {
+    @media (max-width: 850px) {
+        width: calc(($mobile / 360) * 100vw);
+    }
+}
+
+@mixin height($desctop) {
+    height: calc(($desctop / 1920) * 100vw);
+}
+@mixin mediaHeight($mobile) {
+    @media (max-width: 850px) {
+        height: calc(($mobile / 360) * 100vw);
+    }
+}
+
+@mixin borderRadius ($desctop) {
+    border-radius: calc(($desctop / 1920) * 100vw);
+}
+@mixin mediaBorderRadius ($mobile) {
+    @media (max-width:850px) {
+        border-radius: calc(($mobile / 360) * 100vw);
+    }
+}
+
+@mixin padding ($top,$right,$bot,$left){
+    padding: calc(($top  / 1920) * 100vw) calc(($right / 1920) * 100vw) calc(($bot / 1920) * 100vw) calc(($left / 1920) * 100vw);
+}
+@mixin mediaPadding ($top,$right,$bot,$left){
+    @media (max-width:850px) {
+        padding: calc(($top / 360) * 100vw) calc(($right / 360) * 100vw) calc(($bot / 360) * 100vw) calc(($left / 360) * 100vw);
+    }
+}
+@mixin margin ($top,$right,$bot,$left){
+    margin: calc(($top  / 1920) * 100vw) calc(($right / 1920) * 100vw) calc(($bot / 1920) * 100vw) calc(($left / 1920) * 100vw);
+}
+@mixin mediaMargin ($top,$right,$bot,$left){
+    @media (max-width:850px) {
+        margin: calc(($top / 360) * 100vw) calc(($right / 360) * 100vw) calc(($bot / 360) * 100vw) calc(($left / 360) * 100vw);
+    }
+}
+
+@mixin gap ($desctop){
+    gap: calc(($desctop / 1920) * 100vw);
+}
+@mixin mediaGap ($mobile){
+    @media (max-width:850px) {
+        gap: calc(($mobile / 360) * 100vw);
+    }
+}
+
+@mixin border ($desctop,$color){
+    border: solid calc(($desctop / 1920) * 100vw) $color;
+}
+@mixin mediaBorder ($mobile,$color){
+    @media (max-width:850px) {
+        border: solid calc(($mobile / 360) * 100vw) $color;
+    }
+}
+
+@mixin mediaTop($mobile) {
+    @media (max-width:850px) {
+        top: calc(($mobile / 360) * 100vw);
+    }
+}
